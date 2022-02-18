@@ -23,7 +23,8 @@ module.exports = function towelSort (matrix) {
   let sortedArr = [], i, j, curMtrxElm;
   let mtrxElmSz = 0;
   // console.log(matrix);
-
+  // check input params
+  if((matrix === undefined) || (matrix.length === 0)) return sortedArr;
   const mtrxSz = matrix.length;
   mtrxElmSz = matrix[0].length;
 
